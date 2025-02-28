@@ -18,23 +18,23 @@ class MarvelCellInfo: UITableViewCell {
     @IBOutlet weak var agility: UILabel!
     @IBOutlet weak var xFactor: UILabel!
     
-    @IBOutlet weak var submit_btn: UIButton!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+     //   submit_btn.layer.cornerRadius = 5
     }
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
         viewContent.layer.cornerRadius  = 5
-        viewContent.layer.borderColor = UIColor.black.cgColor
-        viewContent.layer.borderWidth = 1
+        viewContent.layer.borderColor = UIColor.blue.cgColor
+        viewContent.layer.borderWidth = 3
         viewContent.layer.masksToBounds = true
         
-        submit_btn.layer.cornerRadius = 5
+      // submit_btn.layer.cornerRadius = 5
 
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
