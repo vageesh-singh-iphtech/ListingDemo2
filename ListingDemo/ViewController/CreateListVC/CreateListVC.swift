@@ -29,6 +29,18 @@ class CreateListVC: UIViewController,UITextViewDelegate, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        txtStudName.layer.cornerRadius=20
+        txtStudName.layer.borderWidth=2
+        
+        txtStudtRollNo.layer.cornerRadius=20
+        txtStudtRollNo.layer.borderWidth=2
+        
+        txtStudDept.layer.cornerRadius=20
+        txtStudDept.layer.borderWidth=2
+        
+        txtStudAddress.layer.cornerRadius=20
+        txtStudAddress.layer.borderWidth=2
+        
         txtStudName.delegate = self
         txtStudDept.delegate = self
         txtStudAddress.delegate = self
